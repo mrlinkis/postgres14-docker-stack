@@ -16,6 +16,7 @@ cd postgres-docker
 Запуск и проверка
 
 docker-compose up -d
+
 docker exec -it pg-db psql -U postgres -d "ESOG.Auth"
 
 Технологии
