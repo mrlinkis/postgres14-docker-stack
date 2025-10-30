@@ -10,6 +10,7 @@
 Быстрый старт
 
 git clone https://github.com/mrlinkis/postgres14-docker-stack
+
 cd postgres-docker
 
 Запуск и проверка
