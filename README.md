@@ -1,32 +1,46 @@
 Готовый шаблон для быстрого развёртывания PostgreSQL с преднастроенными базами данных. Разворачивает готовую среду за 1-2 минуты вместо ручной настройки.
 
+
 Что делает
+
 
 Автоматически создаёт 5 готовых к работе баз данных
 Настраивает безопасное подключение через pg_hba.conf
 Использует отдельный порт 5433 для изоляции от других инстансов
 Сохраняет данные в volumes для persistence
 
+
 Быстрый старт
+
 
 git clone https://github.com/mrlinkis/postgres14-docker-stack
 
 cd postgres-docker
 
+
 Запуск и проверка
+
 
 docker-compose up -d
 
 docker exec -it pg-db psql -U postgres -d "ESOG.Auth"
 
+
 Технологии
 
+
 PostgreSQL 14
+
 Docker / Docker Compose
+
 Bash
+
 Настройка через .env
 
+
+
 Особенности реализации
+
 
 Конфигурация безопасности - настроенный pg_hba.conf
 Автоматическая инициализация - скрипты в docker-entrypoint-initdb.d
